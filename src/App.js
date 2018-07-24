@@ -27,7 +27,7 @@ const User = (props) => (
 
 // route: '/settings'
 const Settings = (props) => (
-  <section>This is where you can choose which metrics are important to you! SHow the metrics you want and hide the ones you don't!</section>
+  <section>This is where you can choose which metrics are important to you! Show the metrics you want and hide the ones you don't!</section>
 );
 
 // route: '/dashboard'
