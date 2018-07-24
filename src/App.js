@@ -22,7 +22,7 @@ const Navigation = (props) => (
 
 // route: '/'
 const Home = (props) => (
-  <section>This is the TSF Homepage.</section>
+  <section>Please enter your email address to login to your TSF User account now!</section>
 );
 
 
