@@ -1,0 +1,7 @@
+.Dashboard-container {
+    display: flex;
+    border: 2px solid red;
+    background-color: yellow;
+    height: 400px;
+    width: 300px;
+}

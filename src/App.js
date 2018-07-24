@@ -5,6 +5,11 @@ import {
   Route
 } from 'react-router-dom';
 import './App.css';
+import User from './User';
+import Settings from './Settings';
+import Dashboard from './Dashboard';
+
+
 
 const Navigation = (props) => (
   <ul>
@@ -18,21 +23,6 @@ const Navigation = (props) => (
 // route: '/'
 const Home = (props) => (
   <section>This is the TSF Homepage.</section>
-);
-
-// route: '/user'
-const User = (props) => (
-  <section>This is where you can keep track of your desired metrics. Click buttons below to increase your metrics during the selling blitz.</section>
-);
-
-// route: '/settings'
-const Settings = (props) => (
-  <section>This is where you can choose which metrics are important to you! Show the metrics you want and hide the ones you don't!</section>
-);
-
-// route: '/dashboard'
-const Dashboard = (props) => (
-  <section>Main TSF Selling Blitz Dashboard.</section>
 );
 
 
