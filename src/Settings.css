@@ -8,3 +8,18 @@
     height: 75vh;
     width: 75vw;
 }
+
+/* Form CSS*/
+legend {
+    background-color: #000;
+    color: #fff;
+    padding: 3px 6px;
+}
+
+.output {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input {
+    margin: .4rem;
+}
