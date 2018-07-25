@@ -1,0 +1,23 @@
+.Home-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid red;
+    background-color: orange;
+    height: 60vh;
+    width: 50vw;
+}
+.Email-input {
+    height: 1.5rem;
+    width: 20rem;
+    margin-bottom: 10px;
+}
+
+.TSF-button {
+    height: 2rem;
+    width: 10rem;
+    background-color: lightgreen;
+    border: 2px solid black;
+    border-radius: 5px;
+}

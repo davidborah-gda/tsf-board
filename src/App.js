@@ -5,6 +5,7 @@ import {
   Route
 } from 'react-router-dom';
 import './App.css';
+import Home from './Home';
 import User from './User';
 import Settings from './Settings';
 import Dashboard from './Dashboard';
@@ -19,12 +20,6 @@ const Navigation = (props) => (
     <li><Link to='/dashboard'>Dashboard</Link></li>
     </ul>
 );
-
-// route: '/'
-const Home = (props) => (
-  <section>Please enter your email address to login to your TSF User account now!</section>
-);
-
 
 class App extends Component {
   render() {
