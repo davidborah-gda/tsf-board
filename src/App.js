@@ -6,8 +6,8 @@ import {
 } from 'react-router-dom';
 import './App.css';
 import Home from './Home';
-import User from './User';
 import Settings from './Settings';
+import User from './User';
 import Dashboard from './Dashboard';
 
 
@@ -15,8 +15,8 @@ import Dashboard from './Dashboard';
 const Navigation = (props) => (
   <ul>
     <li><Link to='/'>Home</Link></li>
-    <li><Link to='/user'>User</Link></li>
     <li><Link to='/settings'>Settings</Link></li>
+    <li><Link to='/user'>User</Link></li>
     <li><Link to='/dashboard'>Dashboard</Link></li>
     </ul>
 );
@@ -27,8 +27,8 @@ class App extends Component {
           <div className="App-container">
           <Navigation />
           <Route exact path='/' component={Home} />
-          <Route path='/user' component={User} />
           <Route path='/settings' component={Settings} />
+          <Route path='/user' component={User} />
           <Route path='/dashboard' component={Dashboard} />
           </div>
     );
