@@ -3,10 +3,9 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    border: 2px solid red;
     background-color: orange;
-    height: 60vh;
-    width: 50vw;
+    height: 100vh;
+    width: 100vw;
 }
 .Email-input {
     height: 1.5rem;
