@@ -24,7 +24,7 @@ const Navigation = (props) => (
 class App extends Component {
   render() {
     return (
-          <div>
+          <div className="App-container">
           <Navigation />
           <Route exact path='/' component={Home} />
           <Route path='/user' component={User} />
