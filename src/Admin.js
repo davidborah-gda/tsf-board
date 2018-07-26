@@ -4,7 +4,7 @@ import React from 'react';
 import './Admin.css';
 
 
-const Clock = (props) => (
+const Admin = (props) => (
     <div className="Admin-container">
       This is the admin page to set the countdown clock and input the "Company" name for the day.
     </div>
