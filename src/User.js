@@ -6,8 +6,11 @@ import './User.css';
 
 const User = (props) => (
     <div className="User-container">
-      This is where the User App lives!
-      <img src="https://dailyendorphins.files.wordpress.com/2014/10/orangetheory-screen.jpg"/>
+    <div className="Left">This is Main Call Volume Section.
+    <button>+</button>
+    <button>-</button>
+    </div>
+    <div className="Right">This is the Other Metrics Setcion.</div>
     </div>
 )
 
