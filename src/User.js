@@ -10,7 +10,7 @@ const User = (props) => (
     <button>+</button>
     <button>-</button>
     </div>
-    <div className="Right">This is the Other Metrics Setcion.</div>
+    <div className="Right">This is the Other Metrics Section.</div>
     </div>
 )
 
