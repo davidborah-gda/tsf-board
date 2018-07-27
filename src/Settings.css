@@ -26,3 +26,11 @@ input {
 .rename {
     width: 90%;
 }
+
+.TSF-button {
+    height: 2rem;
+    width: 10rem;
+    background-color: lightgreen;
+    border: 2px solid black;
+    border-radius: 5px;
+}

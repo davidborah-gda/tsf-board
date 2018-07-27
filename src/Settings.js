@@ -61,7 +61,7 @@ const Settings = (props) => (
         <input className="rename" id="custom" placeholder="(optional) Rename 'Other Success' metrics" />
     </div>
 </fieldset>
-<button>Save Settings</button>
+<button className="TSF-button">Save Settings</button>
     </div>
 )
 
