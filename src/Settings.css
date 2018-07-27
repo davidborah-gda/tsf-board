@@ -22,3 +22,7 @@ legend {
 input {
     margin: .4rem;
 }
+
+.rename {
+    width: 90%;
+}
