@@ -1,3 +1,9 @@
+.User-Topbar-container {
+    display: flex;
+    justify-content: center;
+    background-color: yellow;
+}
+
 .User-container {
     display: flex;
     justify-content: center;
@@ -9,14 +15,20 @@
     width: 80vw;
 }
 
-.Left {
+.Calls-container {
     background-color: lightskyblue;
     height: 100%;
     width: 100%;
 }
 
-.Right {
+.Metrics-container {
     background-color: lightseagreen;
     height: 100%;
     width: 100%;
+}
+
+.TotalCalls-container {
+    background-color: red;
+    height: 200px;
+    width: 200px;
 }
