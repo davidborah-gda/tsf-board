@@ -1,3 +1,7 @@
+.Metrics-Main-Container {
+    height: 100vh;
+}
+
 .User-Topbar-container {
     display: flex;
     justify-content: center;
@@ -26,6 +30,9 @@
 }
 
 .Metrics-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     background-color: lightseagreen;
     height: 100%;
     width: 100%;
