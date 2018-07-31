@@ -12,7 +12,7 @@ const User = (props) => (
     </div>
     <div className="User-container">
     <div className="Calls-container">
-    <h1>Total Calls</h1>
+    <h1 className="Total-calls-title">Total Calls</h1>
     <h1 className="Daily-calls">88</h1>
     <div className="Buttons-row">
     <button className="increase">▲</button>
