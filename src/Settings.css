@@ -19,6 +19,10 @@ legend {
     font: 1rem 'Fira Sans', sans-serif;
 }
 
+.Name-input {
+    width: 90%;
+}
+
 input {
     margin: .4rem;
 }
