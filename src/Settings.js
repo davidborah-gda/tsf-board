@@ -2,11 +2,13 @@
 
 import React from 'react';
 import './Settings.css';
+import { Link } from 'react-router-dom'
 
 
 const Settings = (props) => (
     <div className="Settings-container">
       <fieldset>
+    <input className="Name-input" placeholder="Your Name: ex: John Smith" />
     <legend>Choose your sales metrics settings!</legend>
 
     <div>
@@ -61,7 +63,7 @@ const Settings = (props) => (
         <input className="rename" id="custom" placeholder="(optional) Rename 'Other Success' metrics" />
     </div>
 </fieldset>
-<button className="TSF-button">Save Settings</button>
+<Link to='/User'><button className="TSF-button">Save Settings</button></Link>
     </div>
 )
 
