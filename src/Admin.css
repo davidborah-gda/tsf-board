@@ -8,13 +8,18 @@
     width: 100vw;
 }
 
+.TimeClock-input {
+    height: 3rem;
+    width: 300px;
+}
+
 .CompanyName-input {
-    height: 1.5rem;
+    height: 3rem;
     width: 300px;
 }
 
 .TSF-button {
-    height: 2rem;
+    height: 3rem;
     width: 10rem;
     background-color: lightgreen;
     border: 2px solid black;

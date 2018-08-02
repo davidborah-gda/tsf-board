@@ -6,14 +6,12 @@ import './Admin.css';
 
 const Admin = (props) => (
     <div className="Admin-container">
-      <h1>Countdown Clock</h1>
-      <h3>Please Enter the Time in Minutes</h3>
-      <input className="TimeClock-input" />
-      <button className="TSF-button">Set Time Clock</button>
-      <h1>Company Name</h1>
-      <h3>Please Enter the Company Name for this selling Blitz</h3>
-      <input className="CompanyName-input" />
-    <button className="TSF-button">Set Company Name</button>
+      <h3>Time Clock Settings</h3>
+      <input className="TimeClock-input" placeholder="Time in Minutes ex. 15"  />
+      <button className="TSF-button">Start Time Clock</button>
+      <h4>Company Name for todays selling blitz</h4>
+      <input className="CompanyName-input" placeholder="Company Name" />
+    <button className="TSF-button">Save Company Name</button>
     </div>
 )
 

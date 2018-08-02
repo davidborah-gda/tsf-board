@@ -27,6 +27,7 @@
     background-color: orange;
     height: 30px;
     width: 30px;
+    border-radius: 20%;
 }
 
 .Buttons-row1 {
@@ -41,6 +42,7 @@
     height: 30px;
     width: 30px;
     font-size: 1rem;
+    border-radius: 20%;
 }
 
 .decrease1 {
@@ -48,6 +50,7 @@
     height: 30px;
     width: 30px;
     font-size: 1rem;
+    border-radius: 20%;
 }
 
 .Weekly-total-calls1 {

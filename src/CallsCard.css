@@ -24,6 +24,8 @@
     border-radius: 10px;
     height: 100px;
     width: 200px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 .Buttons-row {
@@ -40,6 +42,7 @@
     font-size: 3rem;
     border-radius: 10%;
     margin-right: 5px;
+    margin-left: 5px;
 }
 
 .decrease {
@@ -49,6 +52,7 @@
     font-size: 3rem;
     border-radius: 10%;
     margin-right: 5px;
+    margin-left: 5px;
 }
 
 .Weekly-total-calls {
