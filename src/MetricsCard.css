@@ -2,7 +2,9 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 4px 10px;
+    background-color: #f3c82e;
+    margin: 5px 5px;
+    padding: 5px 5px;
 }
 
 
@@ -11,7 +13,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: blue;
+    background-color: #f3c82e;
 
     
 }
@@ -22,7 +24,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: pink;
+    background-color: orange;
     height: 30px;
     width: 30px;
 }
@@ -53,7 +55,7 @@
 }
 
 .Daily-calls1 {
-    font-size: 2rem;
+    font-size: 5rem;
     margin-top: 0;
     margin-bottom: 0;
 }

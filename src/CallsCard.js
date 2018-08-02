@@ -13,7 +13,7 @@ const CallsCard = (props) => (
     <button className="increase">▲</button>
     <button className="decrease">▼</button>
     <div className="TotalCalls-container">
-    <h3>Weekly Total</h3>
+    <h3 className="Weekly-title">Weekly Total</h3>
     <h1 className="Weekly-total-calls">99</h1>
     </div>
     </div>

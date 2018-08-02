@@ -25,7 +25,6 @@ const User = props => (
         <MetricsCard />
         <MetricsCard />
         <MetricsCard />
-        <MetricsCard />
       </div>
     </div>
   </div>
