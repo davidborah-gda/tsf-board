@@ -21,6 +21,7 @@ legend {
 
 .Name-input {
     width: 90%;
+    height: 1.5rem;
 }
 
 input {
@@ -29,6 +30,7 @@ input {
 
 .rename {
     width: 90%;
+    height: 1.5rem;
 }
 
 .TSF-button {

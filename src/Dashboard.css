@@ -10,7 +10,8 @@
 
 .Dashboard-Metrics-container {
     height: 80vh;
-    width: 90vw;
+    width: 95vw;
+    border: 2px solid white;
     background-color: rgba(0, 0, 255, 0.3);
     z-index: 1;
     position: fixed;

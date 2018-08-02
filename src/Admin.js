@@ -8,10 +8,12 @@ const Admin = (props) => (
     <div className="Admin-container">
       <h3>Time Clock Settings</h3>
       <input className="TimeClock-input" placeholder="Time in Minutes ex. 15"  />
-      <button className="TSF-button">Start Time Clock</button>
+      <button className="TSF-admin-button">Start Time Clock</button>
       <h4>Company Name for todays selling blitz</h4>
       <input className="CompanyName-input" placeholder="Company Name" />
-    <button className="TSF-button">Save Company Name</button>
+    <button className="TSF-admin-button">Save Company Name</button>
+    <h5>Fireworks Coming Soon</h5>
+    <button className="TSF-admin-button fireworks">Fireworks!!!</button>
     </div>
 )
 
