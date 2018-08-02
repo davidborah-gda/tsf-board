@@ -13,7 +13,7 @@ const MetricsCard = (props) => (
     <button className="increase1">▲</button>
     <button className="decrease1">▼</button>
     <div className="TotalCalls-container1">
-    <h1 className="Weekly-total-calls1">11</h1>
+    <h1 className="Weekly-total-calls1">22</h1>
     </div>
     </div>
     </div>

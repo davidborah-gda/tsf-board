@@ -21,6 +21,7 @@
     align-items: center;
     justify-content: center;
     background-color: #f3c82e;
+    border-radius: 10px;
     height: 100px;
     width: 200px;
 }
@@ -37,6 +38,8 @@
     height: 100px;
     width: 100px;
     font-size: 3rem;
+    border-radius: 10%;
+    margin-right: 5px;
 }
 
 .decrease {
@@ -44,6 +47,8 @@
     height: 100px;
     width: 100px;
     font-size: 3rem;
+    border-radius: 10%;
+    margin-right: 5px;
 }
 
 .Weekly-total-calls {
@@ -53,7 +58,7 @@
 
 .Weekly-title {
     font-size: 1.5rem;
-    margin: 0px 0px;
+    margin: 5px 0px;
 }
 
 .Daily-calls {

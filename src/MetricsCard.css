@@ -3,7 +3,8 @@
     justify-content: space-between;
     flex-wrap: wrap;
     background-color: #f3c82e;
-    margin: 5px 5px;
+    border-radius: 10px;
+    margin: 5px 0px;
     padding: 5px 5px;
 }
 
@@ -14,8 +15,7 @@
     justify-content: center;
     align-items: center;
     background-color: #f3c82e;
-
-    
+    border-radius: 10px;
 }
 
 
