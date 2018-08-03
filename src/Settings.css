@@ -34,9 +34,11 @@ input {
 }
 
 .TSF-button {
-    height: 2rem;
+    height: 2.5rem;
     width: 10rem;
     background-color: lightgreen;
     border: 2px solid black;
     border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
