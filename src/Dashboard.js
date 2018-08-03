@@ -10,15 +10,15 @@ const Dashboard = (props) => (
       <img src="https://raw.githubusercontent.com/davidborah-gda/tsf-board/master/src/TSF_Logo_White.png" className="TSF-logo"/>
       <div className="Dashboard-Metrics-container">
       <div className="User-Row-Heading-container">
-      <h4 className="Test-User">Participant Name</h4>
-      <h4 className="Test-User">Total Calls</h4>
-      <h4 className="Test-User">DM Name</h4>
-      <h4 className="Test-User">DM Email</h4>
-      <h4 className="Test-User">Meetings</h4>
-      <h4 className="Test-User">Proposals</h4>
-      <h4 className="Test-User">Social Links</h4>
-      <h4 className="Test-User">Other Success</h4>
-      <h4 className="Test-User">Total Sales</h4>
+      <h4 className="Dash-Metrics-Title">Participant Name</h4>
+      <h4 className="Dash-Metrics-Title">Total Calls</h4>
+      <h4 className="Dash-Metrics-Title">DM Name</h4>
+      <h4 className="Dash-Metrics-Title">DM Email</h4>
+      <h4 className="Dash-Metrics-Title">Meetings</h4>
+      <h4 className="Dash-Metrics-Title">Proposals</h4>
+      <h4 className="Dash-Metrics-Title">Social Links</h4>
+      <h4 className="Dash-Metrics-Title">Other Success</h4>
+      <h4 className="Dash-Metrics-Title">Total Sales</h4>
       </div>
       <DashboardRow />
       <DashboardRow />

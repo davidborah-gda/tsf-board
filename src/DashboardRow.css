@@ -6,7 +6,15 @@
     flex-wrap: wrap;
     width: 100%;
     height: auto;
-    background-color: lightblue;
+    background-color: rgba(0,0,255,0.7);
     border: 1px solid black;
     padding: 0px 60px 0px 10px;
+}
+
+.Test-User {
+    font-size: 1.5rem;
+}
+
+.Test-UserName {
+    font-size: 1rem;
 }

@@ -22,6 +22,10 @@
     height: 100vh;
 }
 
+.Dash-Metrics-Title {
+    font-size: 1rem;
+}
+
 .User-Row-Heading-container {
     display: flex;
     align-items: center;
