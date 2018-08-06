@@ -12,8 +12,6 @@ const Admin = (props) => (
       <h4>Company Name for todays selling blitz</h4>
       <input className="CompanyName-input" placeholder="Company Name" />
     <button className="TSF-admin-button">Save Company Name</button>
-    <h5>Fireworks Coming Soon</h5>
-    <button className="TSF-admin-button fireworks">Fireworks!!!</button>
     </div>
 )
 

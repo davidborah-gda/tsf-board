@@ -6,6 +6,7 @@
     background-color: orange;
     height: 90vh;
     width: 90vw;
+    margin-top: 50px;
 }
 
 /* Form CSS*/
@@ -35,9 +36,10 @@ input {
 
 /* TSF Button Style */
 
-.TSF-button {
+.TSF-Settings-button {
     height: 2.5rem;
-    width: 12rem;
+    width: 15rem;
+    font-size: 1rem;
     background-color: lightgreen;
     border: 2px solid black;
     border-radius: 5px;
@@ -47,7 +49,7 @@ input {
     transition-duration: 0.4s;
 }
 
-.TSF-button:hover {
+.TSF-Settings-button:hover {
     background-color: lightblue; 
     color: white;
 }

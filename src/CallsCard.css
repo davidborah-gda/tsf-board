@@ -34,6 +34,7 @@
     align-items: center;
     background-color: #f3c82e;
     width: 100%;
+    height: auto;
     border-radius: 1rem;
     margin-bottom: 10px;
 }
@@ -44,6 +45,7 @@
     border-radius: 1rem;
     margin-bottom: 10px;
     padding: 0;
+    height: 100%;
 }
 
 .Buttons-row {
@@ -92,7 +94,7 @@
 }
 
 .Daily-calls {
-    font-size: 15rem;
+    font-size: 14rem;
     margin-top: 0;
     margin-bottom: 0;
 }
