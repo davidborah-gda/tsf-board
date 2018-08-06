@@ -7,9 +7,11 @@ const CallsCard = (props) => (
     
     
     <div className="Calls-container">
+    <div className="Main-calls-container">
     <h1 className="Total-calls-title">Calls Today</h1>
     <div className="Daily-calls-container">
     <h1 className="Daily-calls">88</h1>
+    </div>
     </div>
     <div className="Buttons-row">
     <button className="increase">▲</button>
