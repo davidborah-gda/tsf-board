@@ -13,6 +13,7 @@
 
 .Test-User {
     font-size: 1.5rem;
+    color: white;
     margin: 0;
     padding: 0;
 }
@@ -20,4 +21,5 @@
 .Test-UserName {
     font-size: 1.5rem;
     width: 180px;
+    color: white;
 }

@@ -15,15 +15,17 @@
 .Export-Btn {
     height: 3rem;
     width: 8rem;
-    background-color: blue;
+    background-color: lightgreen;
     font-size: 1rem;
-    color: white;
-    border: 1px solid white;
+    color: black;
+    border: 1px solid black;
     border-radius: 1rem;
 }
 
 .Export-Btn:hover {
-    background-color: green;
+    background-color: #239B56;
+    color: white;
+    border: 1px solid white;
 }
 
 .User-container {
@@ -31,7 +33,7 @@
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    border: 2px solid orange;
+    border: 2px solid #85C1E9;
     background-color: lightgoldenrodyellow;
     height: 100%;
     width: 80vw;

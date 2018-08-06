@@ -4,13 +4,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: orange;
+    background-color: #85C1E9;
     height: 100%;
     width: 100%;
 }
 
 .Metrics-container {
-    background-color: orange;
+    background-color: #85C1E9;
     height: 100%;
     width: 100%;
 }
@@ -40,7 +40,7 @@
 }
 
 .Daily-calls-container {
-    background-color: orange;
+    background-color: #85C1E9;
     border: 1px solid white;
     border-radius: 1rem;
     margin-bottom: 10px;
@@ -80,7 +80,7 @@
 }
 
 .decrease:hover {
-    background-color: orangered;
+    background-color: #EC7063;
 }
 
 .Weekly-total-calls {

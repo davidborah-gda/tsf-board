@@ -9,9 +9,9 @@ const Admin = (props) => (
       <h3>Time Clock Settings</h3>
       <input className="TimeClock-input" placeholder="Time in Minutes ex. 15"  />
       <button className="TSF-admin-button">Start Time Clock</button>
-      <h4>Company Name for todays selling blitz</h4>
-      <input className="CompanyName-input" placeholder="Company Name" />
-    <button className="TSF-admin-button">Save Company Name</button>
+      <h4>Custom Event Title</h4>
+      <input className="Event-Title-input" placeholder="Event Title" />
+    <button className="TSF-admin-button">Save Event Title</button>
     </div>
 )
 
