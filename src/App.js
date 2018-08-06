@@ -27,7 +27,7 @@ class App extends Component {
   render() {
     return (
           <div className="App-container">
-          <Navigation />
+          
           <Route exact path='/' component={Home} />
           <Route path='/settings' component={Settings} />
           <Route path='/user' component={User} />
