@@ -4,8 +4,25 @@
 
 .User-Topbar-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
     background-color: #f3c82e;
+}
+
+.Export-Btn {
+    height: 3rem;
+    width: 8rem;
+    background-color: blue;
+    font-size: 1rem;
+    color: white;
+    border: 1px solid white;
+    border-radius: 1rem;
+}
+
+.Export-Btn:hover {
+    background-color: green;
 }
 
 .User-container {
@@ -19,7 +36,6 @@
     width: 80vw;
 }
 
-
 .Metrics-container {
     display: flex;
     justify-content: space-around;
@@ -31,7 +47,6 @@
 .TSF-logo-SM {
     height:100px;
     border-radius: 100%;
-    margin-right: 60px;
     margin-top:10px;
 }
 

@@ -28,6 +28,14 @@
     margin-left: 5px;
 }
 
+.Daily-calls-container {
+    background-color: #f3c82e;
+    border: 1px solid white;
+    border-radius: 1rem;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
 .Buttons-row {
     display: flex;
     flex-direction: row;
@@ -45,6 +53,10 @@
     margin-left: 5px;
 }
 
+.increase:hover {
+    background-color: lightgreen;
+}
+
 .decrease {
     background-color: red;
     height: 100px;
@@ -53,6 +65,10 @@
     border-radius: 10%;
     margin-right: 5px;
     margin-left: 5px;
+}
+
+.decrease:hover {
+    background-color: orangered;
 }
 
 .Weekly-total-calls {

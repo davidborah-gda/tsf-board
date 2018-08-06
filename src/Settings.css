@@ -33,6 +33,8 @@ input {
     height: 1.5rem;
 }
 
+/* TSF Button Style */
+
 .TSF-button {
     height: 2.5rem;
     width: 10rem;
@@ -41,4 +43,11 @@ input {
     border-radius: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.TSF-button:hover {
+    background-color: lightblue; 
+    color: white;
 }
