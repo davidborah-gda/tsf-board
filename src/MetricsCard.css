@@ -37,7 +37,7 @@
     justify-content: center;
 }
 
-.increase1 {
+.increaseMet {
     background-color: green;
     height: 30px;
     width: 30px;
@@ -45,12 +45,20 @@
     border-radius: 20%;
 }
 
-.decrease1 {
+.increaseMet:hover {
+    background-color: lightgreen;
+}
+
+.decreaseMet {
     background-color: red;
     height: 30px;
     width: 30px;
     font-size: 1rem;
     border-radius: 20%;
+}
+
+.decreaseMet:hover {
+    background-color: orangered;
 }
 
 .Weekly-total-calls1 {
