@@ -56,8 +56,10 @@
     font-size:2rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
     .User-container {
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
