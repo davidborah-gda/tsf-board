@@ -1,0 +1,129 @@
+
+.Calls-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #85C1E9;
+    min-height: 100%;
+    width: 100%;
+}
+
+.Counter-title {
+    align-content: center;
+}
+
+.Metrics-container {
+    background-color: #85C1E9;
+    height: 100%;
+    width: 100%;
+}
+
+.TotalCalls-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3c82e;
+    border-radius: 10px;
+    height: 100px;
+    width: 200px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.Main-calls-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3c82e;
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    margin-bottom: 10px;
+}
+
+.Daily-calls-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #85C1E9;
+    border: 1px solid white;
+    border-radius: 1rem;
+    margin-bottom: 10px;
+    padding: 0;
+    height: 100%;
+}
+
+.Buttons-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.increase {
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    font-size: 3rem;
+    border-radius: 10%;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.increase:hover {
+    background-color: lightgreen;
+}
+
+.decrease {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    font-size: 3rem;
+    border-radius: 10%;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.decrease:hover {
+    background-color: #EC7063;
+}
+
+.Weekly-total-calls {
+    font-size: 4rem;
+    margin: 0px 0px;
+}
+
+.Weekly-title {
+    font-size: 1.5rem;
+    margin: 5px 0px;
+}
+
+.Daily-calls {
+    font-size: 14rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.Total-calls-title {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.Username-title {
+    font-size:3rem;
+}
+
+@media only screen and (max-width: 900px) {
+    
+    .increase {
+        height:60px;
+        width:60px;
+    }
+    
+    .decrease {
+        height:60px;
+        width:60px;
+    }
+}
