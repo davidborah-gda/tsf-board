@@ -28,6 +28,22 @@
     border: 1px solid white;
 }
 
+.Settings-Btn {
+    height: 3rem;
+    width: 8rem;
+    background-color: lightblue;
+    font-size: 1rem;
+    color: black;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+
+.Settings-Btn:hover {
+    background-color: yellow;
+    color: black;
+    border: 1px solid white;
+}
+
 .User-container {
     display: flex;
     justify-content: center;
