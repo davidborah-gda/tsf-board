@@ -96,7 +96,7 @@
 }
 
 .Weekly-title {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: 5px 0px;
 }
 
@@ -109,10 +109,23 @@
 .Total-calls-title {
     margin-top: 0;
     margin-bottom: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .Username-title {
-    font-size:3rem;
+    font-size:2.5rem;
+}
+
+.Weekly-Calls-counter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 1rem;
+    width: 50%;
+    height: auto;
+    margin-bottom: 4px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -125,5 +138,9 @@
     .decrease {
         height:60px;
         width:60px;
+    }
+
+    .TotalCalls-container {
+        width: 140px;
     }
 }

@@ -12,7 +12,7 @@ const User = props => (
         src="https://raw.githubusercontent.com/davidborah-gda/tsf-board/master/src/TSF_Logo_Black_MD.jpg"
         className="TSF-logo-SM"
       />
-      <h1 className="Username-title">John Smith</h1>
+      <p className="Username-title">John Smith</p>
       <button className="Export-Btn">Export Data</button>
     </div>
     <div className="User-container">
