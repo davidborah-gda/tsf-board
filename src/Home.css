@@ -3,26 +3,31 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: #85C1E9;
+    background-color: #fafafa;
     height: 100vh;
     width: 100%;
 }
+
 .Email-input {
     height: 2rem;
     width: 20rem;
     margin-bottom: 10px;
+    font-family: "Proxima Nova";
 }
 
 .TSF-button {
     height: 3rem;
     width: 14rem;
-    background-color: lightgreen;
-    border: 2px solid black;
-    border-radius: 5px;
+    font-family: "Proxima Nova";
+    background-color: #85C1E9;
+    border: 1px solid black;
+    border-radius: 3rem;
     font-size: 1.5rem;
     margin-top: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
 }
 
 .TSF-button:hover {

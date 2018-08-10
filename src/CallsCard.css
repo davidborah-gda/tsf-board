@@ -4,13 +4,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #85C1E9;
     min-height: 100%;
     width: 100%;
 }
 
 .Metrics-container {
-    background-color: #85C1E9;
     height: 100%;
     width: 100%;
 }
