@@ -21,15 +21,15 @@ const Dashboard = (props) => (
       <img src="https://raw.githubusercontent.com/davidborah-gda/tsf-board/master/src/TSF_Logo_White.png" className="TSF-logo"/>
       <div className="Dashboard-Metrics-container">
       <div className="User-Row-Heading-container">
-      <h4 className="Dash-Metrics-Title-Name">Participant Name</h4>
-      <h4 className="Dash-Metrics-Title">Total Calls</h4>
-      <h4 className="Dash-Metrics-Title">DM Name</h4>
-      <h4 className="Dash-Metrics-Title">DM Email</h4>
-      <h4 className="Dash-Metrics-Title">Meetings</h4>
-      <h4 className="Dash-Metrics-Title">Proposals</h4>
-      <h4 className="Dash-Metrics-Title">Social Links</h4>
-      <h4 className="Dash-Metrics-Title">Other Success</h4>
-      <h4 className="Dash-Metrics-Title">Total Sales</h4>
+      <p className="Dash-Metrics-Title-Name">Participant Name</p>
+      <p className="Dash-Metrics-Title">Total Calls</p>
+      <p className="Dash-Metrics-Title">DM Name</p>
+      <p className="Dash-Metrics-Title">DM Email</p>
+      <p className="Dash-Metrics-Title">Meetings</p>
+      <p className="Dash-Metrics-Title">Proposals</p>
+      <p className="Dash-Metrics-Title">Social Links</p>
+      <p className="Dash-Metrics-Title">Other Success</p>
+      <p className="Dash-Metrics-Title">Total Sales</p>
       </div>
       <DashboardRow />
       <DashboardRow />
