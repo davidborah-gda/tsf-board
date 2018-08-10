@@ -1,7 +1,6 @@
-/* eslint-disable */
-
 import React from 'react';
 import './MetricsCard.css';
+
 
 const MetricsCard = (props) => (
     

@@ -6,7 +6,7 @@ import CallsCard from "./CallsCard";
 import MetricsCard from "./MetricsCard";
 
 const User = props => (
-  <div className="Metrics-Main-Container">
+  <div className="User-Page-Main-Container">
     <div className="User-Topbar-container">
       <img
         src="https://raw.githubusercontent.com/davidborah-gda/tsf-board/master/src/TSF_Logo_Black_MD.jpg"
