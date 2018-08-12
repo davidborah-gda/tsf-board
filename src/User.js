@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 import React from "react";
 import "./User.css";
 import CallsCard from "./CallsCard";
@@ -17,15 +15,14 @@ const User = props => (
     </div>
     <div className="User-container">
       <CallsCard />
-      <div className="Metrics-container">
-        <MetricsCard />
-        <MetricsCard />
-        <MetricsCard />
-        <MetricsCard />
-        <MetricsCard />
-        <MetricsCard />
-        <MetricsCard />
-        <MetricsCard />
+      <div className="Main-Metrics-container">
+      <MetricsCard title="DM Name" />
+      <MetricsCard title="DM Email" />
+      <MetricsCard title="Meetings" />
+      <MetricsCard title="Proposals" />
+      <MetricsCard title="Social Link" />
+      <MetricsCard title="Other Success" />
+      <MetricsCard title="Sales" />
       </div>
     </div>
   </div>

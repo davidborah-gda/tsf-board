@@ -47,7 +47,7 @@
     width: 80vw;
 }
 
-.Metrics-container {
+.Main-Metrics-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;

@@ -1,22 +1,72 @@
-import React from 'react';
-import './MetricsCard.css';
+import React, { Component } from "react";
+import "./MetricsCard.css";
 
+class MetricsCard extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 0,
+      amount: 1
+    };
+  }
 
-const MetricsCard = (props) => (
-    
-    <div className="Main-container1">
-    <div className="Metrics-container1">
-    <p className="Total-calls-title1">Other Metric</p>
-    <p className="Daily-calls1">55</p>
-    <div className="Buttons-row1">
-    <button className="increaseMet">▲</button>
-    <button className="decreaseMet">▼</button>
-    <div className="TotalCalls-container1">
-    <h1 className="Weekly-total-calls1">22</h1>
-    </div>
-    </div>
-    </div>
-    </div>
-)
+  increment() {
+    this.setState({
+      count: this.state.count + this.state.amount
+    });
+  }
+  decrement() {
+    this.setState({
+      count: this.state.count - this.state.amount
+    });
+  }
+
+  changeAmount(evt) {
+    this.setState({
+      amount: parseInt(evt.target.value, 10)
+    });
+  }
+  render() {
+    console.log(this.props);
+    return (
+      <div className="Outter-Metrics-container">
+        <div className="Inner-Metrics-container">
+          <div className="Metrics-Counter-container">
+            {this.props.title ? (
+              <h1 className="Counter-title Total-calls-title1">
+                {this.props.title}
+              </h1>
+            ) : null}
+            <div className="Daily-calls-container1">
+              <h4 className="Counter-display Daily-calls1">
+                {this.state.count}
+              </h4>
+            </div>
+          </div>
+        
+        <div className="Metrics-Buttons-row">
+          <button
+            onClick={this.increment.bind(this)}
+            className="Counter-button increaseMet"
+          >
+            ▲
+          </button>
+          <button
+            onClick={this.decrement.bind(this)}
+            className="Counter-button decreaseMet"
+          >
+            ▼
+          </button>
+          <div className="Weekly-Total-Metrics-container">
+            <div className="Weekly-Metrics-counter-container">
+            <h1 className="Weekly-total-calls1">{this.state.count}</h1>
+          </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    );
+  }
+}
 
 export default MetricsCard;

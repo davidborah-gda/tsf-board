@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React from 'react';
 import './CallsCard.css';
 import Counter from './Counter';
