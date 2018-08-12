@@ -10,6 +10,7 @@
     flex-wrap: wrap;
     background-color: #f3c82e;
     border-radius: 1rem;
+    border: 2px solid black;
 }
 
 .Export-Btn {

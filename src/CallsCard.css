@@ -19,6 +19,7 @@
     justify-content: center;
     background-color: #f3c82e;
     border-radius: 10px;
+    border: 2px solid black;
     height: 100px;
     width: 200px;
     margin-right: 5px;
@@ -34,6 +35,7 @@
     height: auto;
     border-radius: 1rem;
     margin-bottom: 10px;
+    border: 2px solid black;
 }
 
 .Daily-calls-container {

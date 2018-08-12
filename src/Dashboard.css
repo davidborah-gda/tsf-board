@@ -77,12 +77,13 @@
 
 .Dash-Metrics-Title {
     font-size: 1rem;
-    
+    margin: 0;
 }
 
 .Dash-Metrics-Title-Name {
     font-size: 1.2rem;
     width: 200px;
+    margin: 0;
 }
 
 .User-Row-Heading-container {
