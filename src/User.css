@@ -1,5 +1,5 @@
 .User-Page-Main-Container {
-    height: 80vh;
+    height: 90vh;
 }
 
 .User-Topbar-container {
@@ -28,30 +28,20 @@
     border: 1px solid white;
 }
 
-.Settings-Btn {
-    height: 3rem;
-    width: 8rem;
-    background-color: lightblue;
-    font-size: 1rem;
-    color: black;
-    border: 1px solid black;
-    border-radius: 1rem;
-}
-
 .User-container {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     min-height: 100%;
-    width: 80vw;
+    width: 90vw;
 }
 
 .Main-Metrics-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    height: 75%;
+    height: 80vh;
     width: 100%;
 }
 
@@ -61,8 +51,8 @@
     margin-top:10px;
 }
 
-.Username-title {
-    font-size: 1.2rem;
+.Username-Title {
+    font-size: 2rem;
 }
 
 @media only screen and (max-width: 900px) {

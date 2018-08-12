@@ -1,63 +1,41 @@
-.Metrics-container {
+.Outter-Metric-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
-.Outter-Metrics-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #f3c82e;
     border-radius: 10px;
     margin: 5px 5px;
     padding: 5px 5px;
 }
 
-.Inner-Metrics-container {
+.Inner-Metric-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     background-color: #f3c82e;
 }
 
-.Metrics-Counter-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.Metric-Title {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
 }
 
-.Daily-calls1 {
-    font-size: 5rem;
+.Daily-Metric-Count {
+    font-size: 4rem;
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.Metrics-container1 {
+.Daily-Metric-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #f3c82e;
-    border-radius: 10px;
-}
-
-.Weekly-Total-Metrics-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
     background-color: white;
-    height: 30px;
-    width: 30px;
-    border-radius: 20%;
+    width: 5rem;
+    border-radius: 1rem;
 }
 
-.Metrics-Buttons-row {
+.Metric-Buttons-row {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -70,6 +48,7 @@
     width: 30px;
     font-size: 1rem;
     border-radius: 20%;
+    margin: 0 2px;
 }
 
 .increaseMet:hover {
@@ -82,12 +61,25 @@
     width: 30px;
     font-size: 1rem;
     border-radius: 20%;
+    margin: 0 2px;
 }
 
 .decreaseMet:hover {
     background-color: #EC7063;
 }
 
-.Weekly-total-calls1 {
+.Weekly-Metric-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 20%;
+    margin: 0 2px;
+}
+
+.Weekly-Total-Count {
     font-size: 1rem;
 }

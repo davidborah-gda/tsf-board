@@ -29,38 +29,33 @@ class MetricsCard extends Component {
   render() {
     console.log(this.props);
     return (
-      <div className="Outter-Metrics-container">
-        <div className="Inner-Metrics-container">
-          <div className="Metrics-Counter-container">
+      <div className="Outter-Metric-container">
+        <div className="Inner-Metric-container">
             {this.props.title ? (
-              <h1 className="Counter-title Total-calls-title1">
+              <p className="Metric-Title">
                 {this.props.title}
-              </h1>
+              </p>
             ) : null}
-            <div className="Daily-calls-container1">
-              <h4 className="Counter-display Daily-calls1">
+            <div className="Daily-Metric-container">
+              <p className="Daily-Metric-Count">
                 {this.state.count}
-              </h4>
+              </p>
             </div>
-          </div>
-        
-        <div className="Metrics-Buttons-row">
+        <div className="Metric-Buttons-row">
           <button
             onClick={this.increment.bind(this)}
-            className="Counter-button increaseMet"
+            className="increaseMet"
           >
             ▲
           </button>
           <button
             onClick={this.decrement.bind(this)}
-            className="Counter-button decreaseMet"
+            className="decreaseMet"
           >
             ▼
           </button>
-          <div className="Weekly-Total-Metrics-container">
-            <div className="Weekly-Metrics-counter-container">
-            <h1 className="Weekly-total-calls1">{this.state.count}</h1>
-          </div>
+          <div className="Weekly-Metric-container">
+            <p className="Weekly-Total-Count">{this.state.count}</p>
           </div>
         </div>
         </div>

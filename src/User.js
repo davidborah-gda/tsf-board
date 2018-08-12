@@ -7,21 +7,21 @@ const User = props => (
   <div className="User-Page-Main-Container">
     <div className="User-Topbar-container">
       <img
-        src="https://raw.githubusercontent.com/davidborah-gda/tsf-board/master/src/TSF_Logo_Black_MD.jpg"
+        src="https://raw.githubusercontent.com/davidborah-gda/tsf-board/master/src/TSF_Logo_White.png"
         className="TSF-logo-SM"
       />
-      <p className="Username-title">John Smith</p>
+      <p className="Username-Title">John Smith</p>
       <button className="Export-Btn">Export Data</button>
     </div>
     <div className="User-container">
-      <CallsCard />
+      <CallsCard title="Calls Today" />
       <div className="Main-Metrics-container">
       <MetricsCard title="DM Name" />
       <MetricsCard title="DM Email" />
       <MetricsCard title="Meetings" />
       <MetricsCard title="Proposals" />
-      <MetricsCard title="Social Link" />
-      <MetricsCard title="Other Success" />
+      <MetricsCard title="Social Links" />
+      <MetricsCard title="Other" />
       <MetricsCard title="Sales" />
       </div>
     </div>
