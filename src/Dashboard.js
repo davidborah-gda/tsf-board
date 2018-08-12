@@ -1,9 +1,10 @@
-/* eslint-disable */
-
 import React from 'react';
+import moment from 'moment'
+import Countdown from 'react-countdown-moment'
 import './Dashboard.css';
 import DashboardRow from './DashboardRow';
 
+const endDate = moment().add(2, 'hours')
 
 const Dashboard = (props) => (
     <div className="Dashboard-container">
@@ -15,7 +16,7 @@ const Dashboard = (props) => (
     <h2 className="Event-title">Event Title</h2>
     </div>
     <div className="Timer-container">
-    <h2 className="Timer-text">15:00</h2>
+    <h2 className="Timer-text"><Countdown endDate={endDate} /></h2>
     </div>
     </div>
       <img src="https://raw.githubusercontent.com/davidborah-gda/tsf-board/master/src/TSF_Logo_White.png" className="TSF-logo"/>
