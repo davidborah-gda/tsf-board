@@ -17,7 +17,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #f3c82e;
+    background-color: #EAEDED;
     border-radius: 10px;
     border: 2px solid black;
     height: 100px;
@@ -31,7 +31,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f3c82e;
+    background-color: #D6DBDF;
     width: 100%;
     height: auto;
     border-radius: 1rem;
@@ -61,9 +61,9 @@
 }
 
 .increase {
-    background-color: green;
-    height: 100px;
-    width: 100px;
+    background-color: #58D68D;
+    height: 60px;
+    width: 60px;
     font-size: 3rem;
     border-radius: 10%;
     margin-right: 5px;
@@ -77,8 +77,8 @@
 
 .decrease {
     background-color: red;
-    height: 100px;
-    width: 100px;
+    height: 60px;
+    width: 60px;
     font-size: 3rem;
     border-radius: 10%;
     margin-right: 5px;

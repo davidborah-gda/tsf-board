@@ -1,7 +1,7 @@
 .Outter-Metric-container {
     display: flex;
     justify-content: center;
-    background-color: #f3c82e;
+    background-color: #D6EAF8;
     border: 2px solid black;
     box-shadow: 5px 3px 10px #6d6a6a;
     border-radius: 10px;
@@ -14,7 +14,6 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    background-color: #f3c82e;
 }
 
 .Metric-Title {
@@ -33,6 +32,7 @@
     display: flex;
     justify-content: center;
     background-color: white;
+    border: 1px solid black;
     width: 5rem;
     border-radius: 1rem;
 }
@@ -45,7 +45,7 @@
 }
 
 .increaseMet {
-    background-color: green;
+    background-color: #58D68D;
     height: 30px;
     width: 30px;
     font-size: 1rem;
@@ -76,6 +76,7 @@
     align-items: center;
     justify-content: center;
     background-color: white;
+    border: 1px solid black;
     height: 30px;
     width: 30px;
     border-radius: 20%;

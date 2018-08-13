@@ -8,7 +8,7 @@
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    background-color: #f3c82e;
+    background-color: #5D6D7E;
     border-radius: 1rem;
     border: 2px solid black;
     box-shadow: 5px 3px 10px #6d6a6a;
@@ -55,6 +55,7 @@
 
 .Username-Title {
     font-size: 2rem;
+    color: white;
 }
 
 @media only screen and (max-width: 900px) {

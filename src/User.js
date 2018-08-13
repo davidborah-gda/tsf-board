@@ -2,6 +2,7 @@ import React from "react";
 import "./User.css";
 import CallsCard from "./CallsCard";
 import MetricsCard from "./MetricsCard";
+import { FaFileExcel } from 'react-icons/fa';
 
 const User = props => (
   <div className="User-Page-Main-Container">
@@ -11,7 +12,7 @@ const User = props => (
         className="TSF-logo-SM"
       />
       <p className="Username-Title">John Smith</p>
-      <button className="Export-Btn">Export Data</button>
+      <button className="Export-Btn"><FaFileExcel /> Export</button>
     </div>
     <div className="User-container">
       <CallsCard title="Calls Today" />
