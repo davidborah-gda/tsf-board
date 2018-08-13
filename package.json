@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "moment": "^2.22.2",
+    "nedb": "^1.8.0",
     "react": "^16.4.1",
     "react-countdown-moment": "0.0.4",
     "react-dom": "^16.4.1",
