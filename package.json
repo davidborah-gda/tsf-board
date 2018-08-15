@@ -5,6 +5,7 @@
   "dependencies": {
     "moment": "^2.22.2",
     "nedb": "^1.8.0",
+    "nodemon": "^1.18.3",
     "react": "^16.4.1",
     "react-countdown-moment": "0.0.4",
     "react-dom": "^16.4.1",
@@ -16,7 +17,6 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "dev": "nodemon /server/index.js"
   }
 }
