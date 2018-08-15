@@ -7,6 +7,7 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const errorHandler = require('./middlewares/errorHandler');
 const notFoundHandler = require('./middlewares/404');
+const path = require('path');
 
 //setup environment variables
 dotenv.config();
@@ -27,7 +28,7 @@ server.use(helmet());
 server.use(morgan("combined"));
 server.use(bodyParser.json());  //accepts json data
 server.use(bodyParser.urlencoded( { extended: true } ));  //accept html form data
-
+server.use(express.static(path.join(__dirname, 'build')));
 //models
 const User = require('./models/user');
 const Event = require('./models/event');

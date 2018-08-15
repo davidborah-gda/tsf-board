@@ -15,8 +15,10 @@
   },
   "proxy": "http://localhost:9009",
   "scripts": {
-    "start": "react-scripts start",
+    "client:start": "react-scripts start",
     "build": "react-scripts build",
-    "dev": "nodemon /server/server.js"
+    "dev": "nodemon server/index.js",
+    "start":"node server/index.js",
+    "heroku-postbuild": "npm run build"
   }
 }
