@@ -32,7 +32,7 @@ router.get('/users/:id', async (req, res, next) => {
 });
 
 //update one user by id
-router.put('/foods/:id', async (req, res, next) => {
+router.put('/users/:id', async (req, res, next) => {
     const { id } = req.params;
     const { email, name, preferences, otherSuccess } = req.body;
     try {
