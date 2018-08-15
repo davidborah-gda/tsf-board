@@ -4,7 +4,9 @@ import Countdown from 'react-countdown-moment'
 import './Dashboard.css';
 import DashboardRow from './DashboardRow';
 
-const endDate = moment().add(2, 'hours')
+//Timer below
+const endDate = moment().add(1, 'hours')
+
 
 const Dashboard = (props) => (
     <div className="Dashboard-container">
@@ -44,8 +46,6 @@ const Dashboard = (props) => (
       <DashboardRow />
       <DashboardRow />
       <DashboardRow />
-      <DashboardRow />
-      
       </div>
     </div>
 )
