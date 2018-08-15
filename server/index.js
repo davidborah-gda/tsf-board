@@ -12,11 +12,12 @@ const notFoundHandler = require('./middlewares/404');
 dotenv.config();
 
 //connect to the database
-mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true });
+mongoose.connect(process.env.LOCAL_DB_URI, { useNewUrlParser: true });
 
 //routers
 const userRouter = require('./routers/users');
 const eventRouter = require('./routers/events');
+const adminEventRouter = require('./routers/AdminEvents');
 
 // setup our port
 const port = process.env.PORT || 9009;
@@ -30,6 +31,8 @@ server.use(bodyParser.urlencoded( { extended: true } ));  //accept html form dat
 //models
 const User = require('./models/user');
 const Event = require('./models/event');
+const AdminEvent = require('./models/AdminEvent');
+
 
 //routers
 server.use(userRouter);
