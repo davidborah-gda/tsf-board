@@ -37,6 +37,17 @@ const Dashboard = (props) => (
       <DashboardRow />
       <DashboardRow />
       <DashboardRow />
+      <DashboardRow />
+      <DashboardRow />
+      <DashboardRow />
+      <DashboardRow />
+      <DashboardRow />
+      <DashboardRow />
+      <DashboardRow />
+      <DashboardRow />
+      <DashboardRow />
+      <DashboardRow />
+      <DashboardRow />
       
       </div>
     </div>
