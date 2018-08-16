@@ -13,15 +13,7 @@ import Admin from './pages/Admin';
 
 
 
-const Navigation = (props) => (
-  <ul>
-    <li><Link to='/'>Home</Link></li>
-    <li><Link to='/settings'>Settings</Link></li>
-    <li><Link to='/user'>User</Link></li>
-    <li><Link to='/dashboard'>Dashboard</Link></li>
-    <li><Link to='/admin'>Admin</Link></li>
-    </ul>
-);
+
 
 class App extends Component {
   render() {
