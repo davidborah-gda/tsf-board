@@ -5,11 +5,11 @@ import {
   Route
 } from 'react-router-dom';
 import './App.css';
-import Home from './Home';
-import Settings from './Settings';
-import User from './User';
-import Dashboard from './Dashboard';
-import Admin from './Admin';
+import Home from './pages/Home';
+import Settings from './pages/Settings';
+import User from './pages/User';
+import Dashboard from './pages/Dashboard';
+import Admin from './pages/Admin';
 
 
 

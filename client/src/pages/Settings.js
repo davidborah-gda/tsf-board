@@ -1,12 +1,13 @@
 /* eslint-disable */
 
 import React from 'react';
-import './Settings.css';
+import './css/Settings.css';
 import { Link } from 'react-router-dom'
 
 
 const Settings = (props) => (
     <div className="Settings-container">
+      <form>
       <fieldset>
     <input className="Name-input" placeholder="Your Name: ex: John Smith" />
     <legend>Choose your sales metrics settings!</legend>
@@ -63,7 +64,8 @@ const Settings = (props) => (
         <input className="rename" id="custom" placeholder="(optional) Rename 'Other Success' metrics" />
     </div>
 </fieldset>
-<Link to='/User'><button className="TSF-Settings-button">Save Settings</button></Link>
+<Link to='/User'><button type="submit" className="TSF-Settings-button">Save Settings</button></Link>
+</form>
     </div>
 )
 

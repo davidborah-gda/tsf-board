@@ -1,14 +1,14 @@
 import React from "react";
-import "./User.css";
-import CallsCard from "./CallsCard";
-import MetricsCard from "./MetricsCard";
+import "./css/User.css";
+import CallsCard from "./pages/CallsCard";
+import MetricsCard from "./pages/MetricsCard";
 import { FaFileExcel } from 'react-icons/fa';
 
 const User = props => (
   <div className="User-Page-Main-Container">
     <div className="User-Topbar-container">
       <img
-        src="https://raw.githubusercontent.com/davidborah-gda/tsf-board/master/src/TSF_Logo_White.png"
+        src="https://raw.githubusercontent.com/davidborah-gda/tsf-board/master/client/src/images/TSF_Logo_White.png"
         className="TSF-logo-SM"
       />
       <p className="Username-Title">John Smith</p>

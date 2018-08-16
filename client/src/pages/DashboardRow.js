@@ -1,7 +1,5 @@
-/* eslint-disable */
-
 import React from 'react';
-import './DashboardRow.css';
+import './css/DashboardRow.css';
 
 
 const DashboardRow = (props) => (

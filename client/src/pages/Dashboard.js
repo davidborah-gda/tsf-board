@@ -1,8 +1,8 @@
 import React from 'react';
 import moment from 'moment'
 import Countdown from 'react-countdown-moment'
-import './Dashboard.css';
-import DashboardRow from './DashboardRow';
+import './css/Dashboard.css';
+import DashboardRow from './pages/DashboardRow';
 
 //Timer below
 const endDate = moment().add(1, 'hours')
@@ -12,7 +12,7 @@ const Dashboard = (props) => (
     <div className="Dashboard-container">
     <div className="Event-Topbar">
     <div className="Topbar-logo-container">
-    <img src="https://raw.githubusercontent.com/davidborah-gda/tsf-board/master/src/TSF_Logo_Black_SM.jpeg" className="TSF-logo-sm"/>
+    <img src="https://raw.githubusercontent.com/davidborah-gda/tsf-board/master/client/src/images/TSF_Logo_Black_SM.jpeg" className="TSF-logo-sm"/>
     </div>
     <div className="Event-title-container">
     <h2 className="Event-title">Event Title</h2>
@@ -21,7 +21,7 @@ const Dashboard = (props) => (
     <h2 className="Timer-text"><Countdown endDate={endDate} /></h2>
     </div>
     </div>
-      <img src="https://raw.githubusercontent.com/davidborah-gda/tsf-board/master/src/TSF_Logo_White.png" className="TSF-logo"/>
+      <img src="https://raw.githubusercontent.com/davidborah-gda/tsf-board/master/client/src/images/TSF_Logo_White.png" className="TSF-logo"/>
       <div className="Dashboard-Metrics-container">
       <div className="User-Row-Heading-container">
       <p className="Dash-Metrics-Title-Name">Participant Name</p>

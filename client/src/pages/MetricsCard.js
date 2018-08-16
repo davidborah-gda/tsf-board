@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./MetricsCard.css";
+import "./css/MetricsCard.css";
 
 class MetricsCard extends Component {
   constructor(props) {
