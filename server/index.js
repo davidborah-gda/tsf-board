@@ -15,8 +15,8 @@ dotenv.config();
 
 
 //routers
-const userRouter = require('../routers/users');
-const eventRouter = require('./routers/events');
+const userRouter = require('./routers/Users');
+const eventRouter = require('./routers/Events');
 const adminEventRouter = require('./routers/AdminEvents');
 
 // setup our port
