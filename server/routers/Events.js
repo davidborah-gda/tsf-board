@@ -3,7 +3,7 @@ const router = express.Router();//tiny lego brick
 
 
 // create new Event
-router.post('/api/events', async (req, res, next) => {
+router.post('/events', async (req, res, next) => {
     const {  email, title, date, count } = req.body;
     try {
         
@@ -16,7 +16,7 @@ router.post('/api/events', async (req, res, next) => {
 });
 
 // get one Event by (_id) NEED to convert to email
-router.get('/api/events/:id', async (req, res, next) => {
+router.get('/events/:id', async (req, res, next) => {
     const { id } = req.params;
     try {
         res.status(200).json({
@@ -28,7 +28,7 @@ router.get('/api/events/:id', async (req, res, next) => {
 });
 
 //update one Event by id
-router.put('/api/events/:id', async (req, res, next) => {
+router.put('/events/:id', async (req, res, next) => {
     const { id } = req.params;
     const { email, title, date, count } = req.body;
     try {

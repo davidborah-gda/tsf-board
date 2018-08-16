@@ -4,7 +4,7 @@ const router = express.Router();//tiny lego brick
 
 
 // create new Event
-router.post('/api/admin', async (req, res, next) => {
+router.post('/admin', async (req, res, next) => {
     const {  eventTitle, date, time } = req.body;
     try {
         res.status(201).json({
@@ -16,7 +16,7 @@ router.post('/api/admin', async (req, res, next) => {
 });
 
 // get one AdminEvent by (_id) NEED to convert to email
-router.get('/api/admin/:id', async (req, res, next) => {
+router.get('/admin/:id', async (req, res, next) => {
     const { id } = req.params;
     try {
         res.status(200).json({
@@ -28,7 +28,7 @@ router.get('/api/admin/:id', async (req, res, next) => {
 });
 
 //update one Admin Event by id
-router.put('/api/admin/:id', async (req, res, next) => {
+router.put('/admin/:id', async (req, res, next) => {
     const { id } = req.params;
     const { eventTitle, date, time } = req.body;
     try {

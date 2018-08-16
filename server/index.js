@@ -30,13 +30,14 @@ server.use(bodyParser.urlencoded( { extended: true } ));  //accept html form dat
 const clientAppPath = path.resolve('client', 'build');
 server.use(express.static(clientAppPath));
 
-server.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
-})
 
 //routers
-server.use(userRouter);
-server.use(eventRouter);
+server.use('/api', userRouter);
+server.use('/api', eventRouter);
+
+server.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
+});
 
 //404 handler
 server.use(notFoundHandler);
