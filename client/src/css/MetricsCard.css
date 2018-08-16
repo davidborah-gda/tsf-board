@@ -58,7 +58,7 @@
 }
 
 .decreaseMet {
-    background-color: red;
+    background-color: #58D68D;
     height: 30px;
     width: 30px;
     font-size: 1rem;
@@ -67,7 +67,7 @@
 }
 
 .decreaseMet:hover {
-    background-color: #EC7063;
+    background-color: lightgreen;
 }
 
 .Weekly-Metric-container {
