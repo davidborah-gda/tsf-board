@@ -5,27 +5,21 @@ class MetricsCard extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      count: 0,
-      amount: 1
+      count: 0
     };
   }
 
   increment() {
     this.setState({
-      count: this.state.count + this.state.amount
+      count: this.state.count + 1
     });
   }
   decrement() {
     this.setState({
-      count: this.state.count - this.state.amount
+      count: this.state.count === 0 ? this.state.count : this.state.count - 1
     });
   }
 
-  changeAmount(evt) {
-    this.setState({
-      amount: parseInt(evt.target.value, 10)
-    });
-  }
   render() {
     console.log(this.props);
     return (
