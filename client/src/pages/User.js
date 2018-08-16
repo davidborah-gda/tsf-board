@@ -1,7 +1,7 @@
 import React from "react";
-import "./css/User.css";
-import CallsCard from "./pages/CallsCard";
-import MetricsCard from "./pages/MetricsCard";
+import "../css/User.css";
+import CallsCard from "../pages/CallsCard";
+import MetricsCard from "../pages/MetricsCard";
 import { FaFileExcel } from 'react-icons/fa';
 
 const User = props => (

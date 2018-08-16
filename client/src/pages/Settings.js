@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 import React from 'react';
-import './css/Settings.css';
+import '../css/Settings.css';
 import { Link } from 'react-router-dom'
 
 

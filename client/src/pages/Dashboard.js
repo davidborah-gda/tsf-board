@@ -1,8 +1,8 @@
 import React from 'react';
 import moment from 'moment'
 import Countdown from 'react-countdown-moment'
-import './css/Dashboard.css';
-import DashboardRow from './pages/DashboardRow';
+import '../css/Dashboard.css';
+import DashboardRow from '../pages/DashboardRow';
 
 //Timer below
 const endDate = moment().add(1, 'hours')
