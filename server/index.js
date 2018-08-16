@@ -15,7 +15,7 @@ dotenv.config();
 
 
 //routers
-const userRouter = require('./routers/users');
+const userRouter = require('../routers/users');
 const eventRouter = require('./routers/events');
 const adminEventRouter = require('./routers/AdminEvents');
 
