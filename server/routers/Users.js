@@ -1,6 +1,5 @@
 const express = require('express');
 const router = express.Router();//tiny lego brick
-const User = require('./models/user');
 
 
 // create new user

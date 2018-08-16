@@ -1,7 +1,6 @@
 const express = require('express');
 const server = express();
 const dotenv = require('dotenv');
-const mongoose = require ('mongoose');
 const helmet = require('helmet');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
@@ -13,7 +12,7 @@ const path = require('path');
 dotenv.config();
 
 //connect to the database
-mongoose.connect(process.env.LOCAL_DB_URI, { useNewUrlParser: true });
+
 
 //routers
 const userRouter = require('./routers/users');
@@ -28,11 +27,9 @@ server.use(helmet());
 server.use(morgan("combined"));
 server.use(bodyParser.json());  //accepts json data
 server.use(bodyParser.urlencoded( { extended: true } ));  //accept html form data
-server.use(express.static(path.join(__dirname, 'build')));
-//models
-const User = require('./models/user');
-const Event = require('./models/event');
-const AdminEvent = require('./models/AdminEvent');
+const clientAppPath = path.resolve('client', 'build');
+console.log(clientAppPath)
+server.use(express.static(clientAppPath));
 
 
 //routers
