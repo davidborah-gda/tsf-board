@@ -37,7 +37,7 @@ input {
 
 .TSF-Settings-button {
     height: 3rem;
-    width: 14rem;
+    width: 100%;
     font-size: 1.5rem;
     font-family: "Proxima Nova";
     background-color: #85C1E9;
