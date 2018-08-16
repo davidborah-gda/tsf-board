@@ -24,7 +24,7 @@
   },
   "scripts": {
     "dev": "nodemon server/index.js",
-    "start": "node server/index.js",
+    "start": "node server",
     "heroku-postbuild": "npm run build",
     "build": "cd client && npm install && npm run build"
   },
