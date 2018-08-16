@@ -28,8 +28,6 @@ server.use(morgan("combined"));
 server.use(bodyParser.json());  //accepts json data
 server.use(bodyParser.urlencoded( { extended: true } ));  //accept html form data
 const clientAppPath = path.resolve('client', 'build');
-console.log(__dirname);
-console.log('Public URL:', process.env.PUBLIC_URL);
 server.use(express.static(clientAppPath));
 
 server.get('/', (req, res) => {
