@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../css/Admin.css';
-
+import axios from 'axios';
 
 class Admin extends Component {
   
@@ -16,8 +16,7 @@ class Admin extends Component {
     const eventTitle = inputs.map(input => input.value);
     console.log(eventTitle);
     try {
-      await auth.login(email);
-      console.log(email);
+      
     } catch (error) {
       this.setState({
         error: "Your Title is incorrect"

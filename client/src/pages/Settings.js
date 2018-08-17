@@ -1,9 +1,8 @@
-/* eslint-disable */
-
 import React from "react";
 import "../css/Settings.css";
 import { Link } from "react-router-dom";
 import { Component } from "react";
+import axios from 'axios';
 
 class Settings extends Component {
   state = {
@@ -20,11 +19,10 @@ class Settings extends Component {
     console.log(otherSuccess);
     console.log(inputs);
     try {
-      await auth.login(email);
-      console.log(email);
+      
     } catch (error) {
       this.setState({
-        error: "Your Email is incorrect"
+        error: "Your Settings are incorrect"
       });
       form.reset();
     }
