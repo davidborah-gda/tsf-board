@@ -8,6 +8,7 @@
     margin-top: 50px;
 }
 
+
 /* Form CSS*/
 legend {
     background-color: #000;
@@ -37,7 +38,7 @@ input {
 
 .TSF-Settings-button {
     height: 3rem;
-    width: 100%;
+    width: 15rem;
     font-size: 1.5rem;
     font-family: "Proxima Nova";
     background-color: #85C1E9;
