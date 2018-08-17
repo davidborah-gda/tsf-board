@@ -8,7 +8,6 @@ router.post('/users', async (req, res, next) => {
     try {
         res.status(201).json({
             msg: "Saved New User",
-            user
         }); 
     } catch (error) {
         next(err);

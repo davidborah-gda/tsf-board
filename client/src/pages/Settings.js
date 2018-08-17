@@ -18,23 +18,24 @@ class Settings extends Component {
     const { name, otherSuccess } = inputs.map(input => input.value);
     console.log(name);
     console.log(otherSuccess);
-    // try {
-    //   await auth.login(email);
-    //   console.log(email);
-    // } catch (error) {
-    //   this.setState({
-    //     error: "Your Email is incorrect"
-    //   });
-    //   form.reset();
-    // }
+    console.log(inputs);
+    try {
+      await auth.login(email);
+      console.log(email);
+    } catch (error) {
+      this.setState({
+        error: "Your Email is incorrect"
+      });
+      form.reset();
+    }
 
-    // const auth = {
-    //   login(email) {
-    //     return axios.post("/api/user", { email }).then(response => {
-    //       return response;
-    //     });
-    //   }
-    // };
+    const auth = {
+      login(email) {
+        return axios.post("/api/user", { email }).then(response => {
+          return response;
+        });
+      }
+    };
   }
 
   settingsForm(e) {
