@@ -13,51 +13,51 @@ const Settings = (props) => (
     <legend>Choose your sales metrics settings!</legend>
 
     <div>
-        <input type="checkbox" id="calls" name="feature"
-               value="scales" checked />
-        <label for="scales">Calls Completed</label>
+        <input type="checkbox" id="calls"
+               value="Calls" checked />
+        <label>Calls Completed</label>
     </div>
 
     <div>
-        <input type="checkbox" id="DM_name" name="feature"
-               value="claws" />
-        <label for="claws">Decision Maker Name</label>
+        <input type="checkbox" id="DM_name"
+               value="DMname" />
+        <label>Decision Maker Name</label>
     </div>
 
     <div>
-        <input type="checkbox" id="DM_email" name="feature"
-               value="claws" />
-        <label for="claws">DM Email Address</label>
+        <input type="checkbox" id="DM_email"
+               value="DMemail" />
+        <label>DM Email Address</label>
     </div>
 
      <div>
-        <input type="checkbox" id="meetings" name="feature"
-               value="horns" />
-        <label for="horns">Meetings Scheduled</label>
+        <input type="checkbox" id="meetings"
+               value="Meetings" />
+        <label>Meetings Scheduled</label>
     </div>
 
      <div>
-        <input type="checkbox" id="proposals" name="feature"
-               value="horns" />
-        <label for="horns">Proposals Sent</label>
+        <input type="checkbox" id="proposals"
+               value="Proposals" />
+        <label>Proposals Sent</label>
     </div>
 
     <div>
-        <input type="checkbox" id="Sales" name="feature"
-               value="claws" />
-        <label for="claws">Sales Completed</label>
+        <input type="checkbox" id="sales"
+               value="Sales" />
+        <label>Sales Completed</label>
     </div>
 
     <div>
-        <input type="checkbox" id="social" name="feature"
-               value="claws" />
-        <label for="claws">Social Links</label>
+        <input type="checkbox" id="social"
+               value="SocialLinks" />
+        <label>Social Links</label>
     </div>
 
     <div>
-        <input type="checkbox" id="other" name="feature"
-               value="claws" />
-        <label for="claws">Other Success</label>
+        <input type="checkbox" id="other"
+               value="OtherSuccess" />
+        <label>Other Success</label>
     </div>
 
     <div>
