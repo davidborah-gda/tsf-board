@@ -5,9 +5,11 @@ import { Link } from 'react-router-dom';
 
 const Home = (props) => (
     <div className="Home-container">
+      <form>
       <h4>Please enter your email address to get started!</h4>
       <input className="Email-input" placeholder="hello@company.com" />
-      <Link to='/settings'><button className="TSF-button">Enter</button></Link>
+      <Link to='/settings'><button type="submit" className="TSF-button">Enter</button></Link>
+      </form>
     </div>
 )
 
