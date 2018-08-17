@@ -1,6 +1,8 @@
 import React from "react";
 import "../css/Home.css";
 import { Link } from "react-router-dom";
+import { Component } from 'react';
+import axios from "axios";
 
 class Home extends Component {
   state = {
@@ -12,7 +14,7 @@ class Home extends Component {
     const inputs = Array.from(form.elements).filter(
       element => element.tagName === "INPUT"
     );
-    const [email] = inputs.map(input => input.value);
+    const email = inputs.map(input => input.value);
     try {
       await auth.login(email);
     } catch (error) {
@@ -20,6 +22,14 @@ class Home extends Component {
         error: "Your Email is incorrect"
       });
       form.reset();
+    }
+
+    const auth = {
+      login(email) {
+        return axios.post("/api/user", { email }).then(response => {
+          return response;
+        });
+      },
     }
   }
 
