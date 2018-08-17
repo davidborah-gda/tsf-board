@@ -4,9 +4,8 @@ const router = express.Router();//tiny lego brick
 
 // create new Event
 router.post('/events', async (req, res, next) => {
-    const {  email, title, date, count } = req.body;
+    const { email, title, date, count } = req.body;
     try {
-        
         res.status(201).json({
             msg: "Saved New Event",
         }); 

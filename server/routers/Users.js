@@ -6,8 +6,6 @@ const router = express.Router();//tiny lego brick
 router.post('/users', async (req, res, next) => {
     const { email, name, preferences, otherSuccess } = req.body;
     try {
-        const user = new User({ email, name, preferences, otherSuccess });
-        await user.save();
         res.status(201).json({
             msg: "Saved New User",
             user
@@ -21,7 +19,7 @@ router.post('/users', async (req, res, next) => {
 router.get('/users/:id', async (req, res, next) => {
     const { id } = req.params;
     try {
-        const users = await User.find({ _id: id });
+        
         res.status(200).json({
             users: users
         });
@@ -35,7 +33,7 @@ router.put('/users/:id', async (req, res, next) => {
     const { id } = req.params;
     const { email, name, preferences, otherSuccess } = req.body;
     try {
-        const updatedUser = await User.findByIdAndUpdate(id, { email, name, preferences, otherSuccess }, { new: true });
+        
         res.status(200).json({
             msg: "Updated User Successfully",
             user: updatedUser

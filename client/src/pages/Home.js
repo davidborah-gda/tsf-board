@@ -15,8 +15,10 @@ class Home extends Component {
       element => element.tagName === "INPUT"
     );
     const email = inputs.map(input => input.value);
+    console.log(email);
     try {
       await auth.login(email);
+      console.log(email);
     } catch (error) {
       this.setState({
         error: "Your Email is incorrect"
@@ -33,20 +35,23 @@ class Home extends Component {
     }
   }
 
+  loginForm (e) {
+		e.preventDefault()
+		this.props.history.push('/settings');
+	}
+
   render() {
     return (
       <div className="Home-container">
-        <form onSubmit={this.login.bind(this)}>
+        <form onSubmit={this.loginForm.bind(this)}>
           <h4>Please enter your email address to get started!</h4>
           <input
             className="Email-Address-input"
             placeholder="hello@company.com"
           />
-          <Link to="/settings">
             <button type="submit" className="TSF-button">
               Enter
             </button>
-          </Link>
         </form>
       </div>
     );
