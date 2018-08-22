@@ -4,40 +4,14 @@ const router = express.Router();//tiny lego brick
 
 // create new Event
 router.post('/events', async (req, res, next) => {
-    const { email, title, date, count } = req.body;
+    const { title, date, time } = req.body;
     try {
+        const [event, created] = await Event.findOrCreate({ where: { email: email } });
         res.status(201).json({
             msg: "Saved New Event",
         }); 
     } catch (error) {
         next(error);
-    }
-});
-
-// get one Event by (_id) NEED to convert to email
-router.get('/events/:id', async (req, res, next) => {
-    const { id } = req.params;
-    try {
-        res.status(200).json({
-            events: events
-        });
-    } catch (error) {
-        next(error);
-    }
-});
-
-//update one Event by id
-router.put('/events/:id', async (req, res, next) => {
-    const { id } = req.params;
-    const { email, title, date, count } = req.body;
-    try {
-        
-        res.status(200).json({
-            msg: "Updated Event Successfully",
-        });
-    } catch (error) {
-        next(error);
-        
     }
 });
 

@@ -8,13 +8,21 @@ import Dashboard from "./pages/Dashboard";
 import Admin from "./pages/Admin";
 
 class App extends Component {
+  state = {
+    email: ''
+  }
+  handleEmailChange = (email) => {
+    this.setState({
+      email: email
+    })
+  }
   render() {
     return (
       <div className="App-container">
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" render={routerProps => <Home {...routerProps} onEmailChange={this.handleEmailChange}/>} />
           <Route path="/settings" component={Settings} />
-          <Route path="/user" component={User} />
+          <Route path="/user" render={routerProps => <User {...routerProps} gravatar = {this.state.email}/>} />
           <Route path="/dashboard" component={Dashboard} />
           <Route path="/admin" component={Admin} />
           <Redirect to="/" />

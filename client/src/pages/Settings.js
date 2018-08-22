@@ -4,41 +4,36 @@ import { Link } from "react-router-dom";
 import { Component } from "react";
 import axios from 'axios';
 
+const auth = {
+  login(email) {
+    return axios.post("/api/users", { email }).then(response => {
+      return response;
+    });
+  }
+};
+
 class Settings extends Component {
   state = {
-    error: null
+    error: null,
+    email: this.props.email
   };
-  async login(evt) {
+  async settingsForm(evt) {
     evt.preventDefault();
     const form = evt.target;
     const inputs = Array.from(form.elements).filter(
-      element => element.tagName === "INPUT" || "checkbox"
+      element => element.tagName == "INPUT"
     );
-    const { name, otherSuccess } = inputs.map(input => input.value);
-    console.log(name);
-    console.log(otherSuccess);
-    console.log(inputs);
+    const [email] = inputs.map(input => input.value);
     try {
-      
+      await auth.login(email);
+      this.props.history.push("/user");
     } catch (error) {
       this.setState({
-        error: "Your Settings are incorrect"
+        error: "Your Settings are incorrect",
+        something: error
       });
       form.reset();
     }
-
-    const auth = {
-      login(email) {
-        return axios.post("/api/user", { email }).then(response => {
-          return response;
-        });
-      }
-    };
-  }
-
-  settingsForm(e) {
-    e.preventDefault();
-    this.props.history.push("/user");
   }
 
   render() {
@@ -53,7 +48,7 @@ class Settings extends Component {
             <legend>Choose your sales metrics settings!</legend>
 
             <div>
-              <input type="checkbox" id="calls" value="Calls" checked />
+              <input type="checkbox" id="calls" value="Calls" checked readOnly/>
               <label>Calls Completed</label>
             </div>
 

@@ -1,44 +1,41 @@
 import React from "react";
 import "../css/Home.css";
 import { Link } from "react-router-dom";
-import { Component } from 'react';
+import { Component } from "react";
 import axios from "axios";
+
+const auth = {
+  login(email) {
+    return axios.post("/api/users", { email }).then(response => {
+      return response;
+    });
+  }
+};
 
 class Home extends Component {
   state = {
     error: null
   };
-  async login(evt) {
+  async loginForm(evt) {
     evt.preventDefault();
     const form = evt.target;
     const inputs = Array.from(form.elements).filter(
-      element => element.tagName === "INPUT"
+      element => element.tagName == "INPUT"
     );
-    const email = inputs.map(input => input.value);
-    console.log(email);
+    const [email] = inputs.map(input => input.value);
+    
     try {
       await auth.login(email);
-      console.log(email);
+      this.props.onEmailChange(email);
+      this.props.history.push("/settings");
     } catch (error) {
       this.setState({
-        error: "Your Email is incorrect"
+        error: "Your Email is malformed",
+        something: error
       });
       form.reset();
     }
-
-    const auth = {
-      login(email) {
-        return axios.post("/api/user", { email }).then(response => {
-          return response;
-        });
-      },
-    }
   }
-
-  loginForm (e) {
-		e.preventDefault()
-		this.props.history.push('/settings');
-	}
 
   render() {
     return (
@@ -49,9 +46,9 @@ class Home extends Component {
             className="Email-Address-input"
             placeholder="hello@company.com"
           />
-            <button type="submit" className="TSF-button">
-              Enter
-            </button>
+          <button type="submit" className="TSF-button">
+            Enter
+          </button>
         </form>
       </div>
     );

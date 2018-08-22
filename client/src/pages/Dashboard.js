@@ -5,7 +5,7 @@ import '../css/Dashboard.css';
 import DashboardRow from '../pages/DashboardRow';
 
 //Timer below
-const endDate = moment().add(1, 'hours')
+const endDate = moment().add(45, 'minutes')
 
 
 const Dashboard = (props) => (

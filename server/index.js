@@ -7,6 +7,7 @@ const bodyParser = require('body-parser');
 const errorHandler = require('./middlewares/errorHandler');
 const notFoundHandler = require('./middlewares/404');
 const path = require('path');
+const db = require('./db');
 
 //setup environment variables
 dotenv.config();
@@ -17,7 +18,7 @@ dotenv.config();
 //routers
 const userRouter = require('./routers/Users');
 const eventRouter = require('./routers/Events');
-const adminEventRouter = require('./routers/AdminEvents');
+const adminEventRouter = require('./routers/Metrics');
 
 // setup our port
 const port = process.env.PORT || 9009;
@@ -45,6 +46,8 @@ server.use(notFoundHandler);
 server.use(errorHandler);
 
 // kick it off
-server.listen(port, () => {
-    console.log(`Now listening on port: ${port}`);
-});
+db.sync({force: true}).then(() => {
+    server.listen(port, () => {
+        console.log(`Now listening on port: ${port}`);
+    });
+}).catch(err => console.error(err));
