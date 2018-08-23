@@ -16,16 +16,18 @@ class Settings extends Component {
   state = {
     error: null,
     email: this.props.email
+  
   };
   async settingsForm(evt) {
     evt.preventDefault();
     const form = evt.target;
     const inputs = Array.from(form.elements).filter(
-      element => element.tagName == "INPUT"
+      element => element.tagName === "INPUT"
     );
-    const [email] = inputs.map(input => input.value);
+    const [email, name, calls, DM_name, DM_email, meetings, proposals, sales, other, otherSuccess, Rename_other ] = inputs.map(input => input.value);
     try {
-      await auth.login(email);
+      await auth.login(email, name, calls, DM_name, DM_email, meetings, proposals, sales, other, otherSuccess, Rename_other);
+      //this.props.onEmailChange(email);
       this.props.history.push("/user");
     } catch (error) {
       this.setState({
@@ -41,6 +43,12 @@ class Settings extends Component {
       <div className="Settings-container">
         <form onSubmit={this.settingsForm.bind(this)}>
           <fieldset>
+
+            <input
+                className="email"
+                id="email"
+                placeholder="hello@company.com"
+              />
             <input
               className="Name-input"
               placeholder="Your Name: ex: John Smith"
@@ -90,7 +98,7 @@ class Settings extends Component {
             <div>
               <input
                 className="rename"
-                id="custom"
+                id="Rename_other"
                 placeholder="(optional) Rename 'Other Success' metrics"
               />
             </div>

@@ -12,13 +12,41 @@ const User = sequelize.define('user', {
       defaultValue: null },
     name: {
       type: DataTypes.STRING,
-      allowNull: true,
+      allowNull: false,
       defaultValue: null },
-    preferences: {
+    calls: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    defaultValue: null },
+    DM_name: {
       type: DataTypes.STRING,
       allowNull: true,
     defaultValue: null },
-    otherSuccess: {
+    DM_email: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    defaultValue: null },
+    meetings: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    defaultValue: null },
+      proposals: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    defaultValue: null },
+    sales: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    defaultValue: null },
+    social: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    defaultValue: null },
+    other: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    defaultValue: null },
+    Rename_other: {
       type: DataTypes.STRING,
       allowNull: true,
     defaultValue: null },

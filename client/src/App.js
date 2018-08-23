@@ -21,7 +21,7 @@ class App extends Component {
       <div className="App-container">
         <Switch>
           <Route exact path="/" render={routerProps => <Home {...routerProps} onEmailChange={this.handleEmailChange}/>} />
-          <Route path="/settings" component={Settings} />
+          <Route path="/settings" render={routerProps => <Settings {...routerProps} onEmailChange={this.handleEmailChange}/>} />
           <Route path="/user" render={routerProps => <User {...routerProps} gravatar = {this.state.email}/>} />
           <Route path="/dashboard" component={Dashboard} />
           <Route path="/admin" component={Admin} />

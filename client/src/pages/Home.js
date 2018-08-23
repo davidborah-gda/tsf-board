@@ -20,7 +20,7 @@ class Home extends Component {
     evt.preventDefault();
     const form = evt.target;
     const inputs = Array.from(form.elements).filter(
-      element => element.tagName == "INPUT"
+      element => element.tagName === "INPUT"
     );
     const [email] = inputs.map(input => input.value);
     
