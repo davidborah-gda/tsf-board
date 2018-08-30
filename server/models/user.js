@@ -49,10 +49,6 @@ const User = sequelize.define('user', {
     Rename_other: {
       type: DataTypes.STRING,
       allowNull: true,
-    defaultValue: null },
-    date: {
-      type: DataTypes.DATE,
-      allowNull: true,
     defaultValue: null }
   });
 

@@ -36,11 +36,12 @@ class User extends Component {
       <div className="User-Page-Main-Container">
         <div className="User-Topbar-container">
           {this.props.gravatar && this.state.gravatarImg.entry ? (
-            <img className="Gravatar"src={this.state.gravatarImg.entry[0].thumbnailUrl} />
+            <img className="Gravatar"alt="User Logo"src={this.state.gravatarImg.entry[0].thumbnailUrl} />
           ) : (
             <img
               src="https://raw.githubusercontent.com/davidborah-gda/tsf-board/master/client/src/images/TSF_Logo_White.png"
               className="TSF-logo-SM"
+              alt="Selling Factory Logo"
             />
           )}
           <p className="Username-Title">John Smith</p>
