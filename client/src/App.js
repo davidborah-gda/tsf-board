@@ -9,23 +9,24 @@ import Admin from "./pages/Admin";
 
 class App extends Component {
   state = {
-    email: ''
+    email: '',
+    name: ''
   }
-  handleEmailChange = (email) => {
+  handleEmailChange = (email, name) => { // This handles email AND name now 
     this.setState({
-      email: email
+      email: email,
+      name: name
     })
   }
   render() {
     return (
       <div className="App-container">
         <Switch>
-          <Route exact path="/" render={routerProps => <Home {...routerProps} onEmailChange={this.handleEmailChange}/>} />
-          <Route path="/settings" render={routerProps => <Settings {...routerProps} onEmailChange={this.handleEmailChange}/>} />
+          <Route exact path="/settings" render={routerProps => <Settings {...routerProps} onSettingsChange={this.handleEmailChange}/>} />
           <Route path="/user" render={routerProps => <User {...routerProps} gravatar = {this.state.email}/>} />
           <Route path="/dashboard" component={Dashboard} />
           <Route path="/admin" component={Admin} />
-          <Redirect to="/" />
+          <Redirect to="/settings" />
         </Switch>
       </div>
     );
