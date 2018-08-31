@@ -8,7 +8,7 @@ class MetricsCard extends Component {
       count: 0
     };
   }
-
+ 
   increment() {
     this.setState({
       count: this.state.count + 1

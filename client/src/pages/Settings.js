@@ -4,6 +4,15 @@ import "../css/Settings.css";
 import { Component } from "react";
 import axios from 'axios';
 
+let callsChecked = false; // Hardcoded values for the status of checkboxes
+let decisionMakerChecked = false;
+let dmEmailChecked = false;
+let meetingsChecked = false;
+let proposalsChecked = false;
+let salesdChecked = false;
+let socailChecked = false;
+let OtherChecked = false;
+
 const auth = {
   login(email,name,calls,DM_name,DM_email,meetings,proposals,sales,social,other,Rename_other) { // See Users.js under routers to see where this feeds into
     return axios.post("/api/users", { email, name, calls, DM_name, DM_email, meetings, proposals, sales, social, other, Rename_other }).then(response => {
@@ -15,18 +24,93 @@ const auth = {
 class Settings extends Component {
   state = { // Setting state for this interaction
     error: null,
-    email: this.props.email,
-    name: this.props.name,
-    calls: this.props.calls,
-    DM_name: this.props.DM_name,
-    DM_email: this.props.DM_email,
-    meetings: this.props.meetings,
-    proposals: this.props.proposals,
-    sales: this.props.sales,
-    social: this.props.social,
-    other: this.props.other,
-    Rename_other: this.props.Rename_other
-  };
+    testingstate: true
+
+  }; 
+
+  toggleCalls = () => {
+    if(callsChecked) {
+      callsChecked = false;
+    }
+    else {
+      callsChecked = true;
+    }
+    console.log("ToggleCalls = " + callsChecked)
+  }
+
+
+  toggleDecision = () => {  // Manually grabbing each checkbox value, individually
+    if(decisionMakerChecked) {
+      decisionMakerChecked = false;
+    }
+    else {
+      decisionMakerChecked = true;
+    }
+    console.log("Toggle Decisions = " + decisionMakerChecked)
+  }
+
+  toggleDMemail = () => {
+    if(dmEmailChecked) {
+      dmEmailChecked = false;
+    }
+    else {
+      dmEmailChecked = true;
+    }
+    console.log("Toggle DM Email = " + dmEmailChecked)
+  }
+
+  toggleMeetings = () => {
+    if(meetingsChecked) {
+      meetingsChecked = false;
+    }
+    else {
+      meetingsChecked = true;
+    }
+    console.log("Toggle Meetings = " + meetingsChecked)
+  }
+
+  toggleProposals = () => {
+    if(proposalsChecked) {
+      proposalsChecked = false;
+    }
+    else {
+      proposalsChecked = true;
+    }
+    console.log("Toggle Proposals = " + proposalsChecked)
+  }
+
+  toggleSales = () => {
+    if(salesdChecked) {
+      salesdChecked = false;
+    }
+    else {
+      salesdChecked = true;
+    }
+    console.log("Toggle Sales = " + salesdChecked)
+  }
+
+  toggleSocial = () => {
+    if(socailChecked) {
+      socailChecked = false;
+    }
+    else {
+      socailChecked = true;
+    }
+    console.log("Toggle Social = " + socailChecked)
+  }
+  
+  toggleOther = () => {
+    if(OtherChecked) {
+      OtherChecked = false;
+    }
+    else {
+      OtherChecked = true;
+    }
+    console.log("Toggle Other = " + OtherChecked)
+  }
+
+  
+
   async settingsForm(evt) {
     evt.preventDefault(); // stops default submit behavior
     const form = evt.target; // this is the form object itself
@@ -46,7 +130,8 @@ class Settings extends Component {
     console.log("This is the value of calls right after the const declaration")
     console.log(calls);
     try {
-      await auth.login(email,name,calls,DM_name,DM_email,meetings,proposals,sales,social,other,Rename_other); // This begins database interaction, feeding in values
+      // Now the update to the database for this section will send True/False (0 or 1) to the database for if these are checked or not
+      await auth.login(email,name,callsChecked,decisionMakerChecked,dmEmailChecked,meetingsChecked,proposalsChecked,salesdChecked,socailChecked,OtherChecked,Rename_other); // This begins database interaction, feeding in values
       this.props.onSettingsChange(email,name,calls,DM_name,DM_email,meetings,proposals,sales,social,other,Rename_other); // This is where the email and now name state gets passed
       this.props.history.push("/user"); // This is where the page gets switched to user
 
@@ -58,6 +143,8 @@ class Settings extends Component {
       form.reset();
     }
   }
+
+  
 
   render() {
     return (
@@ -75,42 +162,42 @@ class Settings extends Component {
               placeholder="Your Name: ex: John Smith"
             />
             <div>
-              <input type="checkbox" id="calls" />
+              <input type="checkbox" id="calls" onChange={this.toggleCalls} />
               <label>Calls Completed</label>
             </div>
 
             <div>
-              <input type="checkbox" id="DM_name" value="DMname" />
+              <input type="checkbox" id="DM_name" value="DMname" onChange={this.toggleDecision} />
               <label>Decision Maker Name</label>
             </div>
 
             <div>
-              <input type="checkbox" id="DM_email" value="DMemail" />
+              <input type="checkbox" id="DM_email" value="DMemail" onChange={this.toggleDMemail}/>
               <label>DM Email Address</label>
             </div>
 
             <div>
-              <input type="checkbox" id="meetings" value="Meetings" />
+              <input type="checkbox" id="meetings" value="Meetings" onChange={this.toggleMeetings}/>
               <label>Meetings Scheduled</label>
             </div>
 
             <div>
-              <input type="checkbox" id="proposals" value="Proposals" />
+              <input type="checkbox" id="proposals" value="Proposals" onChange={this.toggleProposals}/>
               <label>Proposals Sent</label>
             </div>
 
             <div>
-              <input type="checkbox" id="sales" value="Sales" />
+              <input type="checkbox" id="sales" value="Sales" onChange={this.toggleSales}/>
               <label>Sales Completed</label>
             </div>
 
             <div>
-              <input type="checkbox" id="social" value="SocialLinks" />
+              <input type="checkbox" id="social" value="SocialLinks" onChange={this.toggleSocial}/>
               <label>Social Links</label>
             </div>
 
             <div>
-              <input type="checkbox" id="other" value="OtherSuccess" />
+              <input type="checkbox" id="other" value="OtherSuccess" onChange={this.toggleOther}/>
               <label>Other Success</label>
             </div>
 
