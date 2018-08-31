@@ -20,6 +20,11 @@ legend {
     font: 1rem 'Fira Sans', sans-serif;
 }
 
+.Email-input {
+    width: 90%;
+    height: 1.5rem;
+}
+
 .Name-input {
     width: 90%;
     height: 1.5rem;
