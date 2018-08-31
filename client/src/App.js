@@ -10,12 +10,14 @@ import Admin from "./pages/Admin";
 class App extends Component {
   state = {
     email: '',
-    name: ''
+    name: '',
+    calls: ''
   }
-  handleEmailChange = (email, name) => { // This handles email AND name now 
+  handleEmailChange = (email, name, calls) => { // This handles email AND name now 
     this.setState({
       email: email,
-      name: name
+      name: name,
+      calls: calls
     })
   }
   render() {

@@ -16,7 +16,16 @@ class Settings extends Component {
   state = { // Setting state for this interaction
     error: null,
     email: this.props.email,
-    name: this.props.name
+    name: this.props.name,
+    calls: this.props.calls,
+    DM_name: this.props.DM_name,
+    DM_email: this.props.DM_email,
+    meetings: this.props.meetings,
+    proposals: this.props.proposals,
+    sales: this.props.sales,
+    social: this.props.social,
+    other: this.props.other,
+    Rename_other: this.props.Rename_other
   };
   async settingsForm(evt) {
     evt.preventDefault(); // stops default submit behavior
@@ -24,6 +33,11 @@ class Settings extends Component {
     const inputs = Array.from(form.elements).filter( // this creates an array from your inputs from form
       element => element.tagName === "INPUT"
     );
+
+    for (let i=0; i<inputs.length; i++) { // console logging of values of form items upon submit
+      console.log(i + " " + inputs[i].value);
+    }
+
     const [email, name, calls, DM_name, DM_email, meetings, proposals, sales, social, other, Rename_other ] = inputs.map((input) => {return input.value}); // Declaring values for what is entered on form
     console.log("This is the value of email right after the const declaration")
     console.log(email);
@@ -33,7 +47,7 @@ class Settings extends Component {
     console.log(calls);
     try {
       await auth.login(email,name,calls,DM_name,DM_email,meetings,proposals,sales,social,other,Rename_other); // This begins database interaction, feeding in values
-      this.props.onSettingsChange(email,name); // This is where the email and now name state gets passed
+      this.props.onSettingsChange(email,name,calls,DM_name,DM_email,meetings,proposals,sales,social,other,Rename_other); // This is where the email and now name state gets passed
       this.props.history.push("/user"); // This is where the page gets switched to user
 
     } catch (error) { // Shouldn't run if everything's good
@@ -61,7 +75,7 @@ class Settings extends Component {
               placeholder="Your Name: ex: John Smith"
             />
             <div>
-              <input type="checkbox" id="calls" value="Calls" checked readOnly/>
+              <input type="checkbox" id="calls" />
               <label>Calls Completed</label>
             </div>
 
